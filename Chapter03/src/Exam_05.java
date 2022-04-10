@@ -1,7 +1,7 @@
 /*
- * ½¬ÇÁÆ® ¿¬»ê : »ê¼úÀûÀÎ °è»ê°ú ³í¸®ÀûÀÎ °è»ê(´Ü¼øÈ÷ ÀÚ·á¸¦ ÀÌµ¿ÇÏ´Â ¿ªÇÒ)
- * Left Shift : ÁÂÃøÀÌµ¿, °öÇÏ±â
- * Right Shift : ¿ìÃøÀÌµ¿, ³ª´©±â
+ * ì‰¬í”„íŠ¸ ì—°ì‚° : ì‚°ìˆ ì ì¸ ê³„ì‚°ê³¼ ë…¼ë¦¬ì ì¸ ê³„ì‚°(ë‹¨ìˆœížˆ ìžë£Œë¥¼ ì´ë™í•˜ëŠ” ì—­í• )
+ * Left Shift : ì¢Œì¸¡ì´ë™, ê³±í•˜ê¸°
+ * Right Shift : ìš°ì¸¡ì´ë™, ë‚˜ëˆ„ê¸°
  * 
  */
 public class Exam_05 {

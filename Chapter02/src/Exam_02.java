@@ -1,6 +1,6 @@
 /*
- * °°Àº ÀÚ·áÇü À¸·Î ¹­¾î¼­ ¼±¾ðÀÌ °¡´ÉÇÏ´Ù.
- * °¡µ¶¼ºÀÌ ÁÁÁö ¾Ê¾Æ ¼±È£ÇÏÁö ¾Ê´Â´Ù.
+ * ê°™ì€ ìžë£Œí˜• ìœ¼ë¡œ ë¬¶ì–´ì„œ ì„ ì–¸ì´ ê°€ëŠ¥í•˜ë‹¤.
+ * ê°€ë…ì„±ì´ ì¢‹ì§€ ì•Šì•„ ì„ í˜¸í•˜ì§€ ì•ŠëŠ”ë‹¤.
  * */
 public class Exam_02 {
 	public static void main(String[] args) {

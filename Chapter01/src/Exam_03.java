@@ -1,9 +1,9 @@
 /*
- * ÀÚ¹Ù´Â ¼¼¹ÌÅ¬·ĞÀ¸·Î ³¡³ª¾ß ÇÑÁÙÀ» ÀÎ½ÄÇÑ´Ù;
+ * ìë°”ëŠ” ì„¸ë¯¸í´ë¡ ìœ¼ë¡œ ëë‚˜ì•¼ í•œì¤„ì„ ì¸ì‹í•œë‹¤;
  * */
 public class Exam_03 {
 	public static void main(String[] args) {
-		//System.out.println("¼¼¹ÌÄİ·Ğ")
-		System.out.println("¼¼¹ÌÄİ·Ğ");
+		//System.out.println("ì„¸ë¯¸ì½œë¡ ")
+		System.out.println("ì„¸ë¯¸ì½œë¡ ");
 	}
 }

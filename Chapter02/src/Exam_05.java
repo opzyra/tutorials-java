@@ -1,10 +1,10 @@
 /*
- * String Å¸ÀÔ
- * ¹®ÀÚ¿­À» ´ã´Â ÂüÁ¶ÀÚ·áÇü
- * ±âº»ÀÚ·áÇüÀÇ Boxing Å¬·¡½º parse
- * StringÅ¬·¡½ºÀÇ valueOf ¸Þ¼­µå¸¦ »ç¿ëÇÏ¸é »óÈ£ º¯È¯ÀÌ °¡´ÉÇÏ´Ù.
+ * String íƒ€ìž…
+ * ë¬¸ìžì—´ì„ ë‹´ëŠ” ì°¸ì¡°ìžë£Œí˜•
+ * ê¸°ë³¸ìžë£Œí˜•ì˜ Boxing í´ëž˜ìŠ¤ parse
+ * Stringí´ëž˜ìŠ¤ì˜ valueOf ë©”ì„œë“œë¥¼ ì‚¬ìš©í•˜ë©´ ìƒí˜¸ ë³€í™˜ì´ ê°€ëŠ¥í•˜ë‹¤.
  * 
- * º¯È¯ÀÌ ºÒ°¡´ÉÇÑ°æ¿ì ¿¡·¯°¡ ¹ß»ýÇÑ´Ù!
+ * ë³€í™˜ì´ ë¶ˆê°€ëŠ¥í•œê²½ìš° ì—ëŸ¬ê°€ ë°œìƒí•œë‹¤!
  * */
 public class Exam_05 {
 	public static void main(String[] args) {

@@ -1,13 +1,13 @@
 /*
  * Boxing, Unboxing
- * Boxing(¹Ú½Ì)Àº ¿ø½Ã Å¸ÀÔÀ» ÂüÁ¶ Å¸ÀÔÀ¸·Î º¯È¯ ½ÃÅ°´Â °ÍÀ» ¸»ÇÏ°í, Unboxing(¾ð¹Ú½Ì)Àº ÂüÁ¶ Å¸ÀÔÀ» ¿ø½Ã Å¸ÀÔÀ¸·Î º¯È¯ ½ÃÅ°´Â °ÍÀ» ¸»ÇÑ´Ù.
+ * Boxing(ë°•ì‹±)ì€ ì›ì‹œ íƒ€ìž…ì„ ì°¸ì¡° íƒ€ìž…ìœ¼ë¡œ ë³€í™˜ ì‹œí‚¤ëŠ” ê²ƒì„ ë§í•˜ê³ , Unboxing(ì–¸ë°•ì‹±)ì€ ì°¸ì¡° íƒ€ìž…ì„ ì›ì‹œ íƒ€ìž…ìœ¼ë¡œ ë³€í™˜ ì‹œí‚¤ëŠ” ê²ƒì„ ë§í•œë‹¤.
  * 
- * Æ¯Â¡
- * 1. ¿ø½ÃÅ¸ÀÔÀº nullÀ» ´ãÀ» ¼ö ¾øÁö¸¸, ÂüÁ¶ Å¸ÀÔÀº °¡´ÉÇÏ´Ù.
- * 2. Á¦³Ê¸¯ Å¸ÀÔ¿¡¼­ »ç¿ë °¡´É
+ * íŠ¹ì§•
+ * 1. ì›ì‹œíƒ€ìž…ì€ nullì„ ë‹´ì„ ìˆ˜ ì—†ì§€ë§Œ, ì°¸ì¡° íƒ€ìž…ì€ ê°€ëŠ¥í•˜ë‹¤.
+ * 2. ì œë„ˆë¦­ íƒ€ìž…ì—ì„œ ì‚¬ìš© ê°€ëŠ¥
  * 
  * Auto Boxing / Unboxing
- * ÀÚµ¿º¯È¯
+ * ìžë™ë³€í™˜
  * 
  * */
 public class Exam_03 {

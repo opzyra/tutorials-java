@@ -1,8 +1,8 @@
 /*
- * '=' ´ëÀÔ¿¬»êÀÚ
- * º¯¼ö = »ó¼ö °ª
- * º¯¼ö = º¯¼ö
- * º¯¼ö = ¼ö½Ä(¼ýÀÚ¸¦ ÀÌ¿ëÇÑ °è»ê½Ä - »ê¼ú½Ä, ³í¸®½Ä, °ü°è½Ä)
+ * '=' ëŒ€ìž…ì—°ì‚°ìž
+ * ë³€ìˆ˜ = ìƒìˆ˜ ê°’
+ * ë³€ìˆ˜ = ë³€ìˆ˜
+ * ë³€ìˆ˜ = ìˆ˜ì‹(ìˆ«ìžë¥¼ ì´ìš©í•œ ê³„ì‚°ì‹ - ì‚°ìˆ ì‹, ë…¼ë¦¬ì‹, ê´€ê³„ì‹)
  *  */
 public class Exam_01 {
 	public static void main(String[] args) {
