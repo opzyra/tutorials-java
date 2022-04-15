@@ -1,28 +1,29 @@
 /*
- *  if, if~else, if ~ elseif
- */
+ * 조건문
+ * if, if~else, if ~ else if, if ~ else if ~ else
+ * 
+ * */
 public class Exam_02 {
 	public static void main(String[] args) {
-		// 조건문
 		if(true) {
 			System.out.println("참");
 		}
 		
-		boolean a = true;
+		boolean a = false;
 		
 		if(a) {
-			System.out.println("같다.");
+			System.out.println("참");
 		} else {
-			System.out.println("다르다.");
+			System.out.println("거짓");
 		}
 		
-		int b = 1;
+		int b = 2;
 		int c = 2;
 		
-		if(b > c) {
+		if(b>c) {
 			System.out.println("크다");
 		} else if(b < c) {
-			System.out.println("크다");
+			System.out.println("작다");
 		} else {
 			System.out.println("같다");
 		}

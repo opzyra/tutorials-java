@@ -3,67 +3,60 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
- * 두 개의 정수를 입력받아 큰수와 작은수를 비교하여 출력하는 프로그램을 구현하시오.
- * <입력형식>
- * 첫번째수 = 
- * 두번쨰수 = 
- * 세번째수 = 
- * <출력형식>
- * 큰수 = 
- * 작은수 = 
- */
+ * do~while문: 
+ * 선실행 후 조건비교
+ * 주어진 조건이 거짓이라도 한번은 수행한다.
+ * 
+ * <형식>
+ * do {
+ * 	반복할 문장;
+ * }while(논리조건식);
+ * 
+ * 유효성검사를 할때 << 입력값을 제한할 때
+ * 
+ * 성적 처리 프로그램
+ * 국어, 영어, 수학점수를 입력받아서 총점과 평균을 출력하는 프로그램을 구현하시오.
+ * 
+ * <처리조건>
+ * 1. 입력과 출력형식에 맞게 변수와 자료형을 선언해라.
+ * 2. 평균은 소숫점 이하 둘째짜리까지 표현해라.
+ * 3. 각과목의 점수는 0 ~ 100점 사이만 입력하되 범위를 벗어나면 다시 입력받도록 구현하라.
+ * 
+ * */
 public class Exam_11 {
-	public static void main(String[] ar) throws IOException{
-		//선언
+	public static void main(String[] args) throws IOException {
+		
+		// 선언
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		int su1 = 0, su2 = 0, su3 = 0, max = 0, min = 0;
+		int kor = 0;
+		int math = 0;
+		int eng = 0;
+		int sum = 0;
+		float avg;
 		
-		//입력
-		System.out.print("첫번째수 = ");
-		su1 = Integer.parseInt(in.readLine());
-		System.out.print("두번째수 = ");
-		su2 = Integer.parseInt(in.readLine());
-		System.out.print("세번쨰수 = ");
-		su3 = Integer.parseInt(in.readLine());
+		// 입력
+		do {
+			System.out.print("국어 = ");
+			kor = Integer.parseInt(in.readLine());
+		} while(kor < 0 || kor > 100);
+
+		do {
+			System.out.print("수학 = ");
+			math = Integer.parseInt(in.readLine());
+		} while(math < 0 || math > 100);
 		
-		//처리
+		do {
+			System.out.print("영어 = ");
+			eng = Integer.parseInt(in.readLine());
+		}while(eng < 0 || eng > 100);
 		
-		//2가지 이상 동일한 수 입력시 에러
-		if(su1 == su2 || su1 == su3 ||su2 == su3){
-			System.out.println("같은거 입력 ㄴㄴ");
-			return;
-			//su1이 가장큼
-		}else if(su1 > su2 && su1 > su3){
-			max = su1;
-			//su2와 su3를 비교
-			if(su2>su3){
-				min = su3;
-			}else{
-				min = su2;
-			}
-			//su2가 가장큼
-		}else if(su2 > su1 && su2 > su3){
-			max = su2;
-			//su1과 su3를 비교
-			if(su1 > su3){
-				min = su3;
-			}else{
-				min = su1;
-			}
-		}else{
-			//su3이 가장큼
-			max = su3;
-			//su1과 su2비교
-			if(su1>su2){
-				min = su2;
-			}else{
-				min = su1;
-			}
-		}
+		// 처리
+		sum = kor + math + eng;
+		avg = sum / 3.0f;
 		
-		//출력
-		System.out.println();
-		System.out.println("큰수 = " + max);
-		System.out.println("작은수 = " + min);
+		// 출력
+		System.out.println("총점 = " + sum);
+		System.out.printf("평균 = %.2f", avg);
+		
 	}
 }

@@ -12,10 +12,10 @@ public class Exam_08 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		
-		System.out.print("숫자 하나를 입력하세요. > ");
+		System.out.print("숫자 하나를 입력하세요 > ");
 		String line = in.readLine();
-		int number = Integer.parseInt(line);
 		
-		System.out.println("입력하신 숫자는 " + number + "입니다.");
+		System.out.println("입력하신 숫자는 " + line + "입니다.");
+		
 	}
 }

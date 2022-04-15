@@ -1,35 +1,47 @@
 /*
- * Boxing, Unboxing
- * Boxing(박싱)은 원시 타입을 참조 타입으로 변환 시키는 것을 말하고, Unboxing(언박싱)은 참조 타입을 원시 타입으로 변환 시키는 것을 말한다.
+ * 형변환 (캐스팅)
+ * 자료형 변환의 줄임말
+ * 다른 자료형간의 변환
  * 
- * 특징
- * 1. 원시타입은 null을 담을 수 없지만, 참조 타입은 가능하다.
- * 2. 제너릭 타입에서 사용 가능
+ * 업캐스팅 / 다운캐스팅
  * 
- * Auto Boxing / Unboxing
- * 자동변환
+ * 자료형의 크기를 부등호로 순서지어 나열해보면
+ * byte < short < int < long < float < double
  * 
  * */
 public class Exam_03 {
-	public static void main(String[] arg) {
-		int a = 1;
-		Integer b = 1;
+	public static void main(String[] args) {
+		float ff = 1;
+		System.out.println(ff); // 1.0
 		
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(a == b);
-		// System.out.println(a instanceof int);
-		System.out.println(b instanceof Integer);
+		int ii = (int)ff;
+		System.out.println(ii); // 1
 		
-		// int c = null;
-		Integer d = null;
-		System.out.println(d);
 		
-		int e = 2;
-		Integer f = e;
+		int x = 130;
+		long y = x; // promotion (자동형변환)
+		byte z = (byte)x; // 자료의 손실이 발생한다.
 		
-		System.out.println(f);
-		System.out.println(f instanceof Integer);
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		
+		byte c = 65;
+		short d = c;
+		char e = (char)c;
+		
+		System.out.println(e); // A
+		
+		long f = 100L;
+		float g = (float)f; // 업캐스팅
+		
+		System.out.println(g); // 100.0 실수부가 생긴다!
+		
+		float h = 3.14f;
+		
+		long i = (long)h; // 다운캐스팅
+		
+		System.out.println(i); // ??? 3 실수부 자료 손실
 		
 	}
 }

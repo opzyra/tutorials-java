@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 /*
  * 은행계좌관리 프로그램
  * 
- * <입력 및 출력형식>
+ * <초기출력화면>
  * ==== Bank Menu ====
  * 1. 입금처리
  * 2. 출금처리
@@ -14,19 +14,22 @@ import java.io.InputStreamReader;
  * ===================
  * 선택 = 
  * 
- * <입금처리>
- * 입금액 =
- * 성공: xxx 입금완료
+ * <입금처리 선택시>
+ * 입금액 = 
+ * 성공: xxx 입금 완료!
+ * 실패: 잘못입력하셨습니다.
  * 
- * <출금처리>
- * 출금금액 =
- * 성공: xxx 출금완료
- * 실패: 잔액부족!
+ * <출금처리 선택시>
+ * 출금액 = 
+ * 성공: xxx 출금 완료
+ * 실패: 
+ * 	잔액부족!
+ * 	잘못입력하셨습니다.
  * 
- * <잔액조회>
- * 고객님의 잔액은 XXX원 입니다.
+ * <잔액조회 선택시>
+ * 고객님의 잔액은 xxx원입니다.
  * 
- * <작업종료>
+ * <작업종료 선택시>
  * 프로그램을 종료합니다. 이용해주셔서 감사합니다.
  * */
 public class Program_06 {
@@ -37,33 +40,41 @@ public class Program_06 {
 		
 		// 입력
 		while(true) {
-			
 			System.out.println("==== Bank Menu ====");
 			System.out.println("1. 입금처리");
 			System.out.println("2. 출금처리");
 			System.out.println("3. 잔액조회");
 			System.out.println("4. 작업종료");
 			System.out.println("===================");
-			System.out.print("선택 =");
-			
+			System.out.print("선택 = ");
 			int menu = Integer.parseInt(in.readLine());
 			
 			switch(menu) {
-				case 1:{ // 입금처리
-					System.out.print("입금액 =");
-					int add = Integer.parseInt(in.readLine());
+				case 1: {
+					// 입금 처리
+					int add;
+					do{
+						System.out.print("입금액 = ");
+						add = Integer.parseInt(in.readLine());
+					}while(add <= 0);
+					
 					balance += add;
-					System.out.println(add + "원 입금 완료");
+					System.out.println(add + "원 입금 완료!");
 					break;
 				}
 				case 2: {
-					System.out.print("출금액 =");
-					int sub = Integer.parseInt(in.readLine());
+					// 출금처리
+					int sub;
+					do {
+						System.out.print("출금액 = ");
+						sub = Integer.parseInt(in.readLine());
+					}while(sub <= 0);
+					
 					if(balance - sub >= 0) {
 						balance -= sub;
-						System.out.println(sub + "원 출금 완료");
+						System.out.println(sub + "원 출금 완료!");
 					} else {
-						System.out.println("잔액 부족!");
+						System.out.println("잔액부족!");
 					}
 					break;
 				}
@@ -78,9 +89,6 @@ public class Program_06 {
 				}
 			}
 			
-			System.out.println();
-			
 		}
-		
 	}
 }

@@ -6,23 +6,23 @@ import java.io.InputStreamReader;
  * 다차원배열의 동적할당
  * */
 public class Exam_08 {
-	public static void main(String[] ar) throws IOException{
+	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		
-		int [][] a = new int[2][];
-		int num = 0;
+		int[][] apt = new int[2][];
+		int room = 0;
 		
-		for(int i = 0; i < a.length; i++){
-			System.out.print(i + "의 다차원배열 동적할당 수 = ");
-			num = Integer.parseInt(in.readLine());
+		for(int i = 0; i < apt.length; i++) {
+			System.out.print((i+1) + "층 방의 갯수 = ");
+			room = Integer.parseInt(in.readLine());
 			
-			a[i] = new int[num];
+			apt[i] = new int[room];
 		}
-		for(int i = 0; i < 2; i++){
-			for(int j = 0; j < a[i].length; j++){
-				System.out.println(a[i][j]);
-				}
-			}
 		
+		for(int i = 0; i < apt.length; i++) {
+			for(int j = 0; j < apt[i].length; j++) {
+				System.out.println("apt[" + i + "][" + j + "] = " + apt[i][j]);
+			}
+		}
 	}
 }
