@@ -31,6 +31,8 @@ import java.io.InputStreamReader;
  * 
  */
 
+//생성자 메서드를 통해 값을 입력받을수 있다.
+
 class MyPoint{ // 점
 	private int x;
 	private int y;
@@ -85,7 +87,7 @@ class MyRect{ // 사각형
 	
 }
 
-// 생성자 메소드를 통해 값을 입력받을수 있다.
+
 public class Exam_12 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
