@@ -31,7 +31,7 @@ public class Exam_05 {
 		
 		// 원시타입 => 참조타입
 		// boolen => Boolean
-		// char => Character
+		// char => Char
 		// byte => Byte
 		// short => Short
 		// int = > Integer

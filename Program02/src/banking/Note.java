@@ -1,5 +1,4 @@
 package banking;
-
 /*
  * 계좌관리 프로그램
  * 다음 주어진 프로그램을 구현하시오.
@@ -31,6 +30,8 @@ package banking;
  * 
  * ==== 전체고객 잔액보기 ====
  * 계좌번호 : xx, 고객이름 : xx, 예금잔액 : xxx
+ * 계좌번호 : xx, 고객이름 : xx, 예금잔액 : xxx
+ * 계좌번호 : xx, 고객이름 : xx, 예금잔액 : xxx
  * 
  * <처리조건>
  * 1.계좌를 관리하기 위한 클래스 Account를 구현하시오.
@@ -40,4 +41,6 @@ package banking;
  * 4.둘 이상의 고객을 관리할 목적으로 객체배열을 이용하여 구현한다.
  * 5.실제 처리를 담당하는 클래스 Service를 이용하여 처리를 구현한다.
  * */
-public class Note {}
+public class Note {
+
+}

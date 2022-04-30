@@ -10,12 +10,26 @@ public class Exam_04 {
 		return x + y;
 	}
 	
+	public static int copy(int x, int y) {
+		x = 3;
+		y = 2;
+		System.out.println("copy x = " + x);
+		System.out.println("copy y = " + y);
+		return x + y;
+	}
+	
 	public static void main(String[] args) {
 		int x = 10;
 		int y = 7;
 		int result = 0;
 		
 		result = add(x, y);
-		System.out.println("sum = " + result);
+		System.out.println("sum = " + result); // 17
+		
+		result = copy(x, y);
+		System.out.println("sum = " + result); // 5 
+		System.out.println("x = " + x); // 3
+		System.out.println("y = " + y); // 2
+		
 	}
 }

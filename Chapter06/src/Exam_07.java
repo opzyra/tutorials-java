@@ -3,18 +3,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
- * 성적 처리 프로그램을 메서드화하여 구현
- * 국어, 영어, 수학 점수를 입력받고, 총점과 평균을 출력하는 프로그램을 작성하시오. 
- * 
- * 
- */
+ * 성적 처리 프로그램을 메서드화 하여 구현
+ * 국어, 영어, 수학 점수를 입력받고 총점과 평균을 출력하는 프로그램을 작성하시오.
+ * */
 public class Exam_07 {
-	
-	// 클래스 변수, 맴버필드
+
+	// 클래스 변수 <- 선언
 	static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-	static int kor = 0, eng = 0, math = 0, tot = 0;
+	static int kor = 0, eng = 0, math = 0, total = 0;
 	static float avg = 0;
 	
+	// 입력
 	public static void input() throws IOException {
 		System.out.print("국어 = ");
 		kor = Integer.parseInt(in.readLine());
@@ -26,19 +25,22 @@ public class Exam_07 {
 		math = Integer.parseInt(in.readLine());
 	}
 	
-	public static void process(){
-		tot = kor + eng + math;
-		avg = tot / 3.0f;
+	// 처리
+	public static void process() {
+		total = kor + eng + math;
+		avg = total / 3.0f;
 	}
 	
-	public static void output(){
-		System.out.println("총점 : " + tot);
-		System.out.printf("평균 = %.2f\n", avg);
+	// 출력
+	public static void print() {
+		System.out.println("총점 : " + total);
+		System.out.printf("평균 = %.2f", avg);
 	}
 	
+	// 메인 메서드
 	public static void main(String[] args) throws IOException {
 		input();
 		process();
-		output();
+		print();
 	}
 }

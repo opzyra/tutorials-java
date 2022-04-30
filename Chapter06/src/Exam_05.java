@@ -6,34 +6,33 @@
 public class Exam_05 {
 	
 	public static void changeName(Human human, String name) {
-		human.setName(name);
-	} 
+		human.name = name;
+	}
 	
 	public static void main(String[] args) {
 		Human human = new Human("홍길동");
 		
-		System.out.println(human.getName());
-		changeName(human, "김갑순");
+		System.out.println(human.name); // 홍길동
+		changeName(human, "깁감순");
 		
-		// people1 객체의 값이 변경되었다! => Call By Reference
-		System.out.println(human.getName());
-		
+		System.out.println(human.name); // 홍길동? => 김갑순
 	}
 }
 
-// 클래스 문법.. 나중에 다시보자.
+// 클래스문법.. 나중에 다시보자
+/*
+var human = {
+	name: "홍길동"
+}
+
+console.log(human.name); // 홍길동
+human.name = "김갑순";
+console.log(human.name); // 김갑순
+*/
 class Human {
-	private String name;
+	public String name;
 	
 	public Human(String name) {
 		this.name = name;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public String getName() {
-		return this.name;
 	}
 }

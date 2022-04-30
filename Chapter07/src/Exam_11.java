@@ -1,32 +1,50 @@
 /*
- * Interface : 인터페이스
- * 1.interface
- *   -abstract 클래스의 한 종류로 포함 멤버에 제약을 가지는 클래스
- *   -다중 상속이 가능한 유일한 클래스
+ * Interface: 인터페이스
+ * 1. interface
+ *   - abstract 클래스의 한 종류로 포함 맴버에 제약을 가지는 클래스
+ *   - 다중상속이 가능한 유일한 클래스
  *   
- * 2.interface에 포함가능한 멤버
- *   -public static final 멤버필드
- *   -public abstract 멤버 메서드
- *   -public static inner 클래스
- *   -default 맴버 메서드 <- JAVA 8
- *   
- * 3.상속관계
- *   -키워드 : extends와 implements()
- *   -클래스에서 클래스 상속 : extends
- *   -인터페이스에서 인터페이스로 상속 : extends
- *   -인터페이스에서 클래스로 상속 : implements
- *   -클래스에서 인터페이스로 상속은 불가능하다.
- *   
+ * 2. interface에 포함 가능한 맴버
+ *   - public static final 맴버 필드
+ *   - public abstract 맴버 메서드
+ *   - public static inner 클래스
+ *   - default 맴버 메서드 <- JAVA8 이상 
+ * 
+ * 3. 상속관계
+ *   - 키워드 implements
+ *   - 클래스에서 클래스 상속 : extends
+ *   - 인테퍼에스에서 인터페이스로 상속: extends
+ *   - 인터페이스에서 클래스로 상속: implements
+ *   - 클래스에서 인터페이스로 상속은 불가능하다.
+ * 
  * */
-interface A{}
-interface B extends A{}
-interface C{}
-interface D extends A, C{}
-class E{}
-class F extends E implements A{}
-class G implements A, C{}
-//interface H implements E{}
-
-public class Exam_11 {
-
+interface HumanInterface {
+	// 추상메서드
+	public void walk();
 }
+
+class Park implements HumanInterface {
+
+	@Override
+	public void walk() {
+		// 어떻게 걷는지 Park 클래스만의 걷는 행동을 기술할수 있다.
+	}
+	
+}
+
+interface A {}
+interface B extends A {}
+interface C {}
+interface D extends A, C {}
+
+class E {}
+class F {}
+class G extends E{}
+class H extends F implements A {}
+class I implements A, C {}
+
+// interface J extends E {}
+
+
+
+public class Exam_11 {}

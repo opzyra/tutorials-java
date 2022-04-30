@@ -7,10 +7,11 @@ public class Exam_02 {
 		try {
 			System.out.println(3);
 			System.out.println(4);
-			System.out.println(0/0); // 0으로 나누니 예외가 발생한다!
-			System.out.println(5); // 실행되지 않고 catch구문으로 이동
-		} catch (Exception e) {
-			System.out.println(6);
+			System.out.println(0/0);
+			System.out.println(5);
+		}catch(Exception e) {
+			System.out.println("0으로 나누지마~");
 		}
+		
 	}
 }
